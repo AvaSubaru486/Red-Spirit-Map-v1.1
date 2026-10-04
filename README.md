@@ -6,7 +6,7 @@
 
 ## 在线使用
 
-直接访问 <https://avasubaru486.github.io/Red-Spirit-Map-v1.1/>，无需购买服务器或安装 Python。事件详情中的远程 AI 讲解需要在右上角配置接口地址、模型名称和你自己的 API 卡密，卡密只保存在当前浏览器会话。
+直接访问 <https://avasubaru486.github.io/Red-Spirit-Map-v1.1/>，无需购买服务器或安装 Python。事件详情中的远程 AI 讲解需要在右上角配置接口地址、模型名称和你自己的 API 卡密，卡密只保存在当前浏览器会话。接口服务必须允许来自 GitHub Pages 的 CORS 请求；若服务不允许跨域，请填写自己的同源代理地址。
 
 ## 本地后端开发（可选）
 
