@@ -1,5 +1,6 @@
 """Standard-library checks for the GitHub Pages export."""
 import json
+import gzip
 import unittest
 from pathlib import Path
 
@@ -8,7 +9,12 @@ OUT = ROOT / "dist"
 
 
 def read(path):
-    return json.loads(path.read_text(encoding="utf-8"))
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    parts = sorted(path.parent.glob(path.name + ".gz.part*"))
+    if parts:
+        return json.loads(gzip.decompress(b"".join(part.read_bytes() for part in parts)).decode("utf-8"))
+    raise FileNotFoundError(path)
 
 
 class StaticExportTests(unittest.TestCase):
