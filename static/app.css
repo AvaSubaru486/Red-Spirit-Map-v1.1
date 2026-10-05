@@ -241,6 +241,10 @@ h2 { font-family: Georgia, "Songti SC", serif; font-size: 25px; line-height: 1.2
 .ai-config-field { display: grid; gap: 5px; margin: 9px 0; color: var(--ink-soft); font-size: 11px; }
 .ai-config-field input { min-height: 35px; width: 100%; padding: 7px 9px; color: var(--ink); background: #fffefa; border: 1px solid var(--line); font-size: 12px; }
 .ai-config-field input:focus-visible { border-color: var(--red); outline: 2px solid rgba(167,42,32,.17); }
+.ai-model-row { display: flex; align-items: center; gap: 7px; }
+.ai-model-row select { flex: 1; min-width: 0; min-height: 35px; padding: 7px 9px; color: var(--ink); background: #fffefa; border: 1px solid var(--line); font-size: 12px; }
+.ai-key-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 5px; }
+.ai-config-note { margin: 10px 0 0; color: var(--ink-soft); font-size: 10px; line-height: 1.6; }
 .test-panel-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
 .test-status { min-height: 20px; margin-top: 12px; color: var(--ink-soft); font-size: 11px; }
 .test-status.is-error { color: var(--red); }
